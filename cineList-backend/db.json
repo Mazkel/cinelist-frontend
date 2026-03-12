@@ -1,0 +1,43 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Parasite",
+            "year": 2019,
+            "genre": "Thriller",
+            "image": "https://blacknerdproblems.com/wp-content/uploads/2019/12/Parasite-1024x576.jpg"
+        },
+
+        {
+            "id": 2,
+            "title": "The Dark Knight",
+            "year": 2008,
+            "genre": "Action",
+            "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkUywIUXDjHSQJIaNHYVs08osgBpF5Ot-xmB_omyEZeeRP9Xug"
+        },
+
+        {
+            "id": 3,
+            "title": "Spirited Away",
+            "year": 2001,
+            "genre": "Fantasy",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhcxBy7msWBIrxRvKnczoXV61Vd6kqP5H2Kh3m2U8MMG15JIj"
+        },
+
+        {
+            "id": 4,
+            "title": "The Lord of the Rings: The Return of the King",
+            "year": 2003,
+            "genre": "Fantasy",
+            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZzgwhMq3caDZGr0DtXGEFIhpFNg8hv26jjflOdFdILRd6w8-p"
+        },
+
+        {
+            "id": 5,
+            "title": "There Will Be Blood",
+            "year": 2007,
+            "genre": "Drama",
+            "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-zbrjOW94BUKOzD-g6KpfytRaw6AnJN5UiDVbi-_y00hAdAhc"
+        }
+    ]
+}
