@@ -1,4 +1,3 @@
-import MovieCard from "./components/MovieCard";
 import MovieDetail from "./components/MovieDetail";
 import MoviePage from "./components/MoviesPage";
 import NavBar from "./components/NavBar";
