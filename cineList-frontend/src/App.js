@@ -3,8 +3,19 @@ import MoviePage from "./components/MoviesPage";
 import NavBar from "./components/NavBar";
 import NewMovieForm from "./components/NewMovieForm";
 import { Route, Switch } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3001/movies')
+      .then((r) => r.json())
+      .then((data) => {
+        setMovies(data)
+      });
+  }, []);
+
   return (
     <div>
       <h1>CineList</h1>
@@ -18,11 +29,11 @@ function App() {
         </Route>
 
         <Route path="/movies/:id">
-          <MoviePage />
+          <MovieDetail />
         </Route>
 
         <Route path="/movies">
-          <MovieDetail />
+          <MoviePage movies={movies} />
         </Route>
 
       </Switch>
