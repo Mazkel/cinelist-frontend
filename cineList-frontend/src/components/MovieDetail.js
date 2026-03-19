@@ -1,9 +1,28 @@
+import { useParams } from "react-router-dom";
 
-function MovieDetail() {
+function MovieDetail({ movies }) {
+    const { id } = useParams();
+
+    const movie = movies.find((movie) => (
+        movie.id === id
+    ))
+
+    if (!movie) {
+        return <h2>Loading...</h2>
+    }
+
     return (
         <div>
             <h2>Movie Detail</h2>
-
+            <h3>Title: {movie.title}</h3>
+            <h3>Year: {movie.year}</h3>
+            <h3>Genre: {movie.genre}</h3>
+            <img
+                src={movie.image}
+                alt={movie.title}
+                height="400"
+                width="600"
+            />
         </div>
     );
 }

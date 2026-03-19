@@ -29,7 +29,7 @@ function App() {
         </Route>
 
         <Route path="/movies/:id">
-          <MovieDetail />
+          <MovieDetail movies={movies} />
         </Route>
 
         <Route path="/movies">
