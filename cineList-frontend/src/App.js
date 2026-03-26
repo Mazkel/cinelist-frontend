@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [movies, setMovies] = useState([])
-  
+
   useEffect(() => {
     fetch('http://localhost:3001/movies')
       .then((r) => r.json())
@@ -20,6 +20,20 @@ function App() {
     setMovies((prevMovies) => [...prevMovies, newMovie])
   }
 
+  function handleDeleteMovie(id) {
+    fetch(`http://localhost:3001/movies/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      },
+    })
+      .then(() => {
+        setMovies((prevMovies) =>
+          prevMovies.filter((movie) => movie.id !== id)
+        );
+      });
+  }
+
   return (
     <div>
       <h1>CineList</h1>
@@ -29,11 +43,14 @@ function App() {
       <Switch>
 
         <Route path="/movies/new">
-          <NewMovieForm onAddMovie={onAddMovie}/>
+          <NewMovieForm onAddMovie={onAddMovie} />
         </Route>
 
         <Route path="/movies/:id">
-          <MovieDetail movies={movies} />
+          <MovieDetail
+            movies={movies}
+            handleDeleteMovie={handleDeleteMovie}
+          />
         </Route>
 
         <Route path="/movies">

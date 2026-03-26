@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-function MovieDetail({ movies }) {
+function MovieDetail({ movies, handleDeleteMovie }) {
     const { id } = useParams();
 
     const movie = movies.find((movie) => (
@@ -11,9 +11,14 @@ function MovieDetail({ movies }) {
         return <h2>Loading...</h2>
     }
 
+
+
     return (
         <div>
             <h2>Movie Detail</h2>
+            <button
+            onClick={() => handleDeleteMovie(id)}
+            >Delete</button>
             <h3>Title: {movie.title}</h3>
             <h3>Year: {movie.year}</h3>
             <h3>Genre: {movie.genre}</h3>
@@ -22,7 +27,7 @@ function MovieDetail({ movies }) {
                 alt={movie.title}
                 height="400"
                 width="600"
-            />
+            /> 
         </div>
     );
 }
