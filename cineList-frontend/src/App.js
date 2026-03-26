@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [movies, setMovies] = useState([])
-
+  
   useEffect(() => {
     fetch('http://localhost:3001/movies')
       .then((r) => r.json())
@@ -15,6 +15,10 @@ function App() {
         setMovies(data)
       });
   }, []);
+
+  function onAddMovie(newMovie) {
+    setMovies((prevMovies) => [...prevMovies, newMovie])
+  }
 
   return (
     <div>
@@ -25,7 +29,7 @@ function App() {
       <Switch>
 
         <Route path="/movies/new">
-          <NewMovieForm />
+          <NewMovieForm onAddMovie={onAddMovie}/>
         </Route>
 
         <Route path="/movies/:id">
