@@ -1,38 +1,129 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: darkslateblue;
+  color: aliceblue;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-page {
+  padding: 20px;
+}
+
+.movie-page-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  cursor: default;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: aliceblue;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.movie-card a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.movie-card {
+  width: 220px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 328px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-detail {
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movie-detail img {
+  margin-top: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie-detail button {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-movie-form {
+  padding: 30px;
+  text-align: center;
+}
+
+.movie-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
+

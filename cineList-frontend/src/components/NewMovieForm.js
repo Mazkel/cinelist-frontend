@@ -47,9 +47,12 @@ function NewMovieForm({ onAddMovie }) {
     }
 
     return (
-        <div>
+        <div className="new-movie-form">
             <h2>New Movie Form</h2>
-            <form onSubmit={handleSubmit}>
+            <form 
+            onSubmit={handleSubmit}
+            className="movie-form"
+            >
 
                 <input
                     name="title"

@@ -1,3 +1,4 @@
+import "./App.css";
 import MovieDetail from "./components/MovieDetail";
 import MoviePage from "./components/MoviesPage";
 import NavBar from "./components/NavBar";
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <h1>CineList</h1>
+      <h1 >Cine List</h1>
 
       <NavBar />
 
@@ -58,6 +59,8 @@ function App() {
         </Route>
 
       </Switch>
+
+      <h4>Created By: SILONGO VAILOLO</h4>
 
     </div>
   );

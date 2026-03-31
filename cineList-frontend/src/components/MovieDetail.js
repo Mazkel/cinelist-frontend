@@ -12,7 +12,7 @@ function MovieDetail({ movies, handleDeleteMovie }) {
     }
 
     return (
-        <div>
+        <div className="movie-detail">
             <h2>Movie Detail</h2>
             <button
             onClick={() => handleDeleteMovie(movie.id)}
@@ -23,8 +23,6 @@ function MovieDetail({ movies, handleDeleteMovie }) {
             <img
                 src={movie.image}
                 alt={movie.title}
-                height="400"
-                width="600"
             /> 
         </div>
     );

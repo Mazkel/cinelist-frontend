@@ -2,9 +2,9 @@ import MovieCard from "./MovieCard";
 
 function MoviePage({ movies }) {
     return (
-        <div>
-            <h2>Movie Page</h2>
-            <div>
+        <div className="movie-page">
+            <h2 className="movie-page-heading">Movie Page</h2>
+            <div className="movie-container">
                 {movies.map((movie) => (
                     <MovieCard key={movie.id} movie={movie} />
                 ))}
