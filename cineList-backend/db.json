@@ -5,6 +5,7 @@
       "title": "Parasite",
       "year": 2019,
       "genre": "Thriller",
+      "description": "The story follows the impoverished Kim family, who live in a cramped semi-basement apartment (banjiha) and struggle to make ends meet. Their luck changes when the son, Ki-woo, secures a job as an English tutor for the daughter of the ultra-wealthy Park family.",
       "image": "https://blacknerdproblems.com/wp-content/uploads/2019/12/Parasite-1024x576.jpg"
     },
     {
@@ -12,6 +13,7 @@
       "title": "The Dark Knight",
       "year": 2008,
       "genre": "Action",
+      "description": "With the help of Lieutenant Jim Gordon and District Attorney Harvey Dent, Batman has been successfully keeping a lid on crime in Gotham City. However, the arrival of a chaotic criminal mastermind known as the Joker plunges the city into anarchy, forcing Batman to confront the limit between being a hero and a vigilante.",
       "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkUywIUXDjHSQJIaNHYVs08osgBpF5Ot-xmB_omyEZeeRP9Xug"
     },
     {
@@ -19,6 +21,7 @@
       "title": "Spirited Away",
       "year": 2001,
       "genre": "Fantasy",
+      "description": "The story follows Chihiro, a sullen 10-year-old girl moving to a new neighbourhood with her parents. After her father takes a shortcut, they stumble into a seemingly abandoned theme park. When her parents are transformed into pigs for eating food intended for spirits, Chihiro must find work in a massive, magical bathhouse to survive and find a way to break the spell.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhcxBy7msWBIrxRvKnczoXV61Vd6kqP5H2Kh3m2U8MMG15JIj"
     },
     {
@@ -26,6 +29,7 @@
       "title": "The Lord of the Rings: The Return of the King",
       "year": 2003,
       "genre": "Fantasy",
+      "description": "The final confrontation between the forces of good and evil for control of Middle-earth reaches its climax. While the wizard Gandalf and Aragorn lead the World of Men in a massive battle to draw the gaze of the Dark Lord Sauron, the hobbits Frodo and Sam braves the final leg of their treacherous journey across Mordor to destroy the One Ring in the fires of Mount Doom.",
       "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZzgwhMq3caDZGr0DtXGEFIhpFNg8hv26jjflOdFdILRd6w8-p"
     },
     {
@@ -33,6 +37,7 @@
       "title": "There Will Be Blood",
       "year": 2007,
       "genre": "Drama",
+      "description": "The story follows Daniel Plainview, a ruthless and misanthropic silver miner turned oil prospector. After learning of an oil-rich site in Little Boston, California, he moves there with his adopted son, H.W., to buy up the land. His rise to extreme wealth is defined by his increasing isolation and a bitter, lifelong rivalry with a charismatic young preacher, Eli Sunday.",
       "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-zbrjOW94BUKOzD-g6KpfytRaw6AnJN5UiDVbi-_y00hAdAhc"
     },
     {
@@ -40,7 +45,16 @@
       "title": "Demon Slayer: Kimetsu No Yaiba The Movie: Infinity Castle",
       "year": 2025,
       "genre": "Action",
+      "description": "After completing their rehabilitation training, Tanjiro Kamado, Nezuko, Zenitsu, and Inosuke are assigned to investigate a series of mysterious disappearances aboard the Mugen Train. They join forces with one of the most powerful swordsmen in the Demon Slayer Corps, the Flame Hashira Kyojuro Rengoku.",
       "image": "https://dci832c741skk.cloudfront.net/assets/files/67960/demon-slayer-infinity-castle-kimetsy-no-yaiba-movie-poster.800x600.jpg"
+    },
+    {
+      "id": "8a9a",
+      "title": "One Piece Film: Red",
+      "year": 2022,
+      "genre": "Action",
+      "description": "The story follows the Straw Hat Pirates as they travel to the \"Island of Music\", Elegia, to attend the first-ever live concert by Uta, the world's most beloved pop diva. The event takes a shocking turn when Luffy reveals that Uta is the daughter of the legendary pirate Shanks",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQX2EoQ77lec3Pbc2Myg5qcYqahhmyRcNU8H7jtyMOkHg_V6S4"
     }
   ]
 }

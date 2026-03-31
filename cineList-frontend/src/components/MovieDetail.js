@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 function MovieDetail({ movies, handleDeleteMovie }) {
     const { id } = useParams();
+    const history = useHistory();
 
     const movie = movies.find((movie) => (
         movie.id === id
@@ -15,15 +16,21 @@ function MovieDetail({ movies, handleDeleteMovie }) {
         <div className="movie-detail">
             <h2>Movie Detail</h2>
             <button
-            onClick={() => handleDeleteMovie(movie.id)}
+                onClick={() => {
+                    handleDeleteMovie(movie.id)
+                    history.push("/movies")
+                }}
             >Delete</button>
-            <h3>Title: {movie.title}</h3>
-            <h3>Year: {movie.year}</h3>
-            <h3>Genre: {movie.genre}</h3>
+            <div className="movie-info">
+                <p><strong>Title:</strong> {movie.title}</p>
+                <p><strong>Year:</strong> {movie.year}</p>
+                <p><strong>Genre:</strong> {movie.genre}</p>
+                <p><strong>Description:</strong> {movie.description}</p>
+            </div>
             <img
                 src={movie.image}
                 alt={movie.title}
-            /> 
+            />
         </div>
     );
 }

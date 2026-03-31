@@ -36,7 +36,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <h1 >Cine List</h1>
 
       <NavBar />

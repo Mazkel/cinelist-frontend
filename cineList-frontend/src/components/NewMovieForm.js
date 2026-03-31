@@ -6,6 +6,7 @@ function NewMovieForm({ onAddMovie }) {
         title: "",
         year: "",
         genre: "",
+        description : "",
         image: ""
     });
 
@@ -41,6 +42,7 @@ function NewMovieForm({ onAddMovie }) {
                     title: "",
                     year: "",
                     genre: "",
+                    description: "",
                     image: ""
                 });
             })
@@ -72,6 +74,13 @@ function NewMovieForm({ onAddMovie }) {
                     name="genre"
                     value={formData.genre}
                     placeholder="Genre"
+                    type="text"
+                    onChange={handleChange}
+                />
+                <input
+                    name="description"
+                    value={formData.description}
+                    placeholder="Description"
                     type="text"
                     onChange={handleChange}
                 />
