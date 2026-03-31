@@ -1,9 +1,18 @@
-
-function MovieCard() {
+import { Link } from "react-router-dom";
+function MovieCard({ movie }) {
     return (
         <div>
-            <h2>Movie Card</h2>
-
+            <Link to={`/movies/${movie.id}`}>
+            <img
+                src={movie.image}
+                alt={movie.title}
+                height="300"
+                width="300"
+            />
+            <h3>{movie.title}</h3>
+            </Link>
+            
+            
         </div>
     );
 }

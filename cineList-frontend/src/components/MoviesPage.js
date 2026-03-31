@@ -1,19 +1,14 @@
-import { Link } from "react-router-dom";
+import MovieCard from "./MovieCard";
 
 function MoviePage({ movies }) {
     return (
         <div>
             <h2>Movie Page</h2>
-            <ul>
+            <div>
                 {movies.map((movie) => (
-                    <li key={movie.id}>
-                        <Link to={`/movies/${movie.id}`}>
-                            {movie.title}
-                        </Link>
-                    </li>
+                    <MovieCard key={movie.id} movie={movie} />
                 ))}
-            </ul>
-
+            </div>
         </div>
     );
 }

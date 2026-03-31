@@ -11,13 +11,11 @@ function MovieDetail({ movies, handleDeleteMovie }) {
         return <h2>Loading...</h2>
     }
 
-
-
     return (
         <div>
             <h2>Movie Detail</h2>
             <button
-            onClick={() => handleDeleteMovie(id)}
+            onClick={() => handleDeleteMovie(movie.id)}
             >Delete</button>
             <h3>Title: {movie.title}</h3>
             <h3>Year: {movie.year}</h3>
