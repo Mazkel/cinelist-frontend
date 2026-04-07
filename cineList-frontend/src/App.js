@@ -8,6 +8,32 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [movies, setMovies] = useState([])
+  const [search, setSearch] = useState("")
+  const [genre, setGenre] = useState("Show All")
+  const [alphabeticalOrder, setAlphabeticalOrder] = useState("")
+
+  let displayedMovies = movies;
+
+  displayedMovies = displayedMovies.filter((movie) =>
+    movie.title.toLowerCase().includes(search.toLowerCase())
+  )
+
+  displayedMovies = displayedMovies.filter((movie) => {
+    return genre === "Show All" || movie.genre === genre
+  })
+
+  displayedMovies = [...displayedMovies].sort((a, b) => {
+    if (alphabeticalOrder === "A-Z") {
+      return a.title.localeCompare(b.title)
+    }
+
+    if (alphabeticalOrder === "Z-A") {
+      return b.title.localeCompare(a.title)
+    }
+
+    return 0
+  })
+
 
   useEffect(() => {
     fetch('http://localhost:3001/movies')
@@ -40,7 +66,6 @@ function App() {
       <h1 >Cine List</h1>
 
       <NavBar />
-
       <Switch>
 
         <Route path="/movies/new">
@@ -55,7 +80,15 @@ function App() {
         </Route>
 
         <Route path="/movies">
-          <MoviePage movies={movies} />
+          <MoviePage 
+          movies={displayedMovies}
+          search={search}
+          setSearch={setSearch}
+          genre={genre}
+          setGenre={setGenre}
+          alphabeticalOrder={alphabeticalOrder}
+          setAlphabeticalOrder={setAlphabeticalOrder}
+           />
         </Route>
 
       </Switch>

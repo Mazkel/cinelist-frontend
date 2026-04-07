@@ -160,3 +160,29 @@ transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: none;
+}
+
+.controls input {
+  width: 200px;
+}
+
+.controls input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}

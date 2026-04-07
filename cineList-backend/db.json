@@ -1,14 +1,6 @@
 {
   "movies": [
     {
-      "id": "1",
-      "title": "Parasite",
-      "year": 2019,
-      "genre": "Thriller",
-      "description": "The story follows the impoverished Kim family, who live in a cramped semi-basement apartment (banjiha) and struggle to make ends meet. Their luck changes when the son, Ki-woo, secures a job as an English tutor for the daughter of the ultra-wealthy Park family.",
-      "image": "https://blacknerdproblems.com/wp-content/uploads/2019/12/Parasite-1024x576.jpg"
-    },
-    {
       "id": "2",
       "title": "The Dark Knight",
       "year": 2008,
