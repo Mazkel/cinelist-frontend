@@ -186,3 +186,39 @@ transition: background-color 0.3s ease;
 .controls input::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+form input:focus {
+  border-color: darkslateblue;
+  box-shadow: 0 0 0 2px rgba(72, 61, 139, 0.2);
+}

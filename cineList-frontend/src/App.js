@@ -34,7 +34,6 @@ function App() {
     return 0
   })
 
-
   useEffect(() => {
     fetch('http://localhost:3001/movies')
       .then((r) => r.json())
@@ -61,6 +60,14 @@ function App() {
       });
   }
 
+  function handleUpdateMovie(updatedMovie) {
+    setMovies((prevMovies) =>
+      prevMovies.map((movie) =>
+        movie.id === updatedMovie.id ? updatedMovie : movie
+      )
+    );
+  }
+
   return (
     <div className="app">
       <h1 >Cine List</h1>
@@ -76,19 +83,20 @@ function App() {
           <MovieDetail
             movies={movies}
             handleDeleteMovie={handleDeleteMovie}
+            handleUpdateMovie={handleUpdateMovie}
           />
         </Route>
 
         <Route path="/movies">
-          <MoviePage 
-          movies={displayedMovies}
-          search={search}
-          setSearch={setSearch}
-          genre={genre}
-          setGenre={setGenre}
-          alphabeticalOrder={alphabeticalOrder}
-          setAlphabeticalOrder={setAlphabeticalOrder}
-           />
+          <MoviePage
+            movies={displayedMovies}
+            search={search}
+            setSearch={setSearch}
+            genre={genre}
+            setGenre={setGenre}
+            alphabeticalOrder={alphabeticalOrder}
+            setAlphabeticalOrder={setAlphabeticalOrder}
+          />
         </Route>
 
       </Switch>

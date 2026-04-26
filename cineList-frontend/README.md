@@ -1,19 +1,77 @@
-CineList
-Hi, I'm Silongo Vailolo, and this is my first React Project.
+# CineList
 
-CineList is a React single-page application (SPA) that allows users to browse a collection of movies, view details for a specific movie, and add new movies to the collection.
+Hi, I'm Silongo Vailolo, and this is my first React project.
 
-The app uses React for the frontend and json-server to simulate a RESTful backend API.
+CineList is a single-page application built with React that allows users to browse, add, edit, and delete movies. The project demonstrates core front-end development skills including state management, routing, and working with APIs.
 
-Features 
-- Browse a list of movies
-- View details for a specific movie
-- Add new movies using a controlled form
-- Client-side routing with React Router
+## Features
 
-Technologies Used
-- React
-- React Router
-- JavaScript
-- JSON Server
-- CSS
+* View a list of movies
+* View individual movie details
+* Add new movies
+* Edit existing movies
+* Delete movies
+* Search movies by title
+* Filter movies by genre
+* Sort movies alphabetically
+
+## Technologies Used
+
+* React
+* React Router
+* JavaScript (ES6)
+* CSS
+* JSON Server (mock backend)
+
+---
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Mazkel/cinelist-frontend.git
+cd cinelist-frontend
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the backend (JSON Server)
+
+```bash
+json-server --watch db.json --port 3001
+```
+
+### 4. Start the frontend
+
+```bash
+npm start
+```
+
+## Live Demo
+
+This project uses a local JSON Server backend, so it is not deployed online.
+To experience the full functionality, please run it locally using the instructions above.
+
+## What I Learned
+
+* Building and structuring a React application
+* Managing state using React hooks
+* Creating controlled components (forms)
+* Implementing CRUD operations (Create, Read, Update, Delete)
+* Using React Router for navigation
+* Improving UI/UX with CSS styling
+
+
+## Future Improvements
+
+* Form validation
+* Improved UI design
+* Backend deployment
+* User authentication
+
+---
