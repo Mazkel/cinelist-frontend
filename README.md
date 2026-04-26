@@ -1,5 +1,9 @@
 # CineList
 
+Hi, I'm Silongo Vailolo, and this is my first React project.
+
+CineList is a single-page application built with React that allows users to browse, add, edit, and delete movies. The project demonstrates core front-end development skills including state management, routing, and working with APIs.
+
 ## Screenshot Preview
 
 ### Home Page
@@ -10,10 +14,6 @@
 
 ### Edit Page
 ![Edit Page](./Screenshots/Edit-Page.png)
-
-Hi, I'm Silongo Vailolo, and this is my first React project.
-
-CineList is a single-page application built with React that allows users to browse, add, edit, and delete movies. The project demonstrates core front-end development skills including state management, routing, and working with APIs.
 
 ## Features
 
@@ -45,21 +45,16 @@ git clone https://github.com/Mazkel/cinelist-frontend.git
 cd cinelist-frontend
 ```
 
-### 2. Install dependencies
-
+### 2. Start the backend (in a separate terminal)
 ```bash
-npm install
-```
-
-### 3. Start the backend (JSON Server)
-
-```bash
+cd cineList-backend
 json-server --watch db.json --port 3001
 ```
 
-### 4. Start the frontend
-
+### 3. Start the frontend
 ```bash
+cd cineList-frontend
+npm install
 npm start
 ```
 
