@@ -1,5 +1,16 @@
 # CineList
 
+## Screenshot Preview
+
+### Home Page
+![Home Page](./Screenshots/Home-Page.png)
+
+### Movie Detail
+![Movie Detail](./Screenshots/Movie-Detail.png)
+
+### Edit Page
+![Edit Page](./Screenshots/Edit-Page.png)
+
 Hi, I'm Silongo Vailolo, and this is my first React project.
 
 CineList is a single-page application built with React that allows users to browse, add, edit, and delete movies. The project demonstrates core front-end development skills including state management, routing, and working with APIs.
