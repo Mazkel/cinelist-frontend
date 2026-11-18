@@ -20,7 +20,7 @@ function MoviePage({ movies, search, setSearch, genre, setGenre, alphabeticalOrd
                     <option value="Action">Action</option>
                     <option value="Drama">Drama</option>
                     <option value="Fantasy">Fantasy</option>
-                    <option value="Love">Love</option>
+                    <option value="Love">Romance</option>
                 </select>
 
                 <select
